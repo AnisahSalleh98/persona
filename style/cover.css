@@ -1,0 +1,406 @@
+body {
+    background-image:  url('../images/cover-bg.png');
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;            /* optionally, center the image */
+    -webkit-print-color-adjust: exact;
+    font-family: Lato, Roboto, Sans-serif;
+}
+
+.coverlogo{
+    height: 90px;
+}
+    
+
+.vl{
+    border-left: 1px solid #244667;
+    height: 100%;
+}
+
+.underline{
+    margin-top: -20px;
+}
+.sub-header {
+    font-size: 16px;
+    font-family: Verdana, serif;
+    color: #4b4a4a;
+}
+
+.cover-logo{
+    position: absolute;
+    top: 0;
+    margin-top: 45px;
+    left: 0;
+    margin-left: 220px;
+
+}
+
+.b-bg{
+    background-color: transparent;
+    margin-top: 550px;
+    margin-left: -8px;
+    padding: 65px 50px;
+}
+
+.title-type{
+    font-size: 42pt;
+    color: #1c363d;
+    font-weight: bolder;
+}
+
+.date-type{
+    font-size: 18pt;
+    color: #417b8d;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    bottom: 0;
+    margin-bottom: 75px;
+}
+
+.info-type{
+    font-size: 14pt;
+    font-weight: lighter;
+    color: #70a9a2;
+    bottom: 0;
+    right: 0;
+    margin-top: 40px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.heading-dim2{
+    font-size: 14pt;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.heading {
+    text-align: left;
+    font-size: 24pt;
+    font-weight: normal;
+}
+
+.heading-text{
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.heading-dim{
+    font-size: 18pt;
+}
+
+.dimension-bg{
+    background-color: #d6e6f6;
+    padding: 10px 0 10px 0;
+    width: 100%;
+
+}
+
+
+/********************* LArge Screen **********************************/
+@media only screen and (min-width: 1200px) {
+
+    .heading-dim{
+        font-size: 42px;
+    }
+
+    p.caption{
+        font-size: 18pt;
+        text-align: left;
+    }
+
+    .legacy{
+        font-size: 20pt;
+    }
+
+    .dim-title{
+        margin-top: 45px;
+        margin-left: 300px;
+    }
+
+    h1.welcome{
+        font-size: 42pt;
+        font-weight:400;
+        color: #00293f;
+    }
+    
+    h1.engage{
+        font-size: 62pt;
+        font-weight: 500;
+        margin-top: -25px;
+        color: #00293f
+    }
+
+    
+    .heading-dim2{
+        font-size: 20pt;
+    }
+    
+  
+
+    .bg-color-header {
+        background-color: transparent;
+        padding: 10px;
+        height: 45px;
+        margin-bottom: 5px;
+        vertical-align: middle;
+        font-family: Lato, sans-serif;
+        font-size: 16pt;
+        color: white;
+    }
+
+    
+    #container-donut{
+        height: 70%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #container-donut7,#container-donut8,#container-donut9, #container-donut10,#container-donut11,#container-donut12,#container-donut13,#container-donut14,
+    #container-donut15,#container-donut16, #container-donut17 {
+        height:75%;
+        width: 72%;
+        overflow: hidden;
+       
+    }
+    
+    .department-tbl th{
+        
+        font-size: 22px;
+        
+    }
+
+    .department-tbl td{
+        font-size: 22px;
+    }
+
+
+    .footer {
+        height: 65px;
+        width: 100%;
+       -webkit-print-color-adjust: exact;
+        position: fixed ;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .footer-text {
+    
+        color: #006c99;
+        font-size: 16pt;
+    }
+
+    .insight-head{
+        font-size: 42pt;
+    }
+
+    .sub-insight{
+        font-size: 24pt;
+    }
+
+    .dpt-score{
+        font: 8pt;
+    }
+
+    img.icon-20{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .b-bg{
+        background-color:transparent; padding: 50px;
+
+    }
+    
+    
+}
+/********************* LArge Screen END **********************************/
+
+
+
+/********************* PRINT **********************************/
+@page {
+    size: a4;
+    margin:0;
+  }
+  @media only print {
+    html, body {
+        width: 100%;
+        height: 95%;
+    }
+
+    .heading-2-1{
+        font-size: 10pt;
+    }
+
+    .highcharts-figure-stack, .highcharts-data-table table {
+        width:fit-content;
+        margin-left: -5px;
+        background-color:transparent;
+        margin-right: 50px;
+    }
+    
+    #container-stack {
+        height:fit-content;
+        background-color:transparent;
+    }
+    
+
+    .header-tbl {
+        font-size: 8pt;
+    }
+
+    img.icon{
+        margin-top: 28px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .logo{
+        height: 80px;
+        width: auto;
+    }
+
+    p.para{
+        font-size: 12pt;
+    }
+
+    .para-block{
+        font-size: 12pt;
+    }
+
+    .dim-title{
+        margin-top: 20px;
+        margin-left: 130px;
+        font-size: 11pt;
+        font-weight: bolder;
+    }
+
+    .dim-desc{
+        margin-top: 65px;
+        margin-left: 120px;
+        font-size: 10pt;
+        width: 50%;
+    }
+
+
+    #container-overall{
+        height: 420px;
+        width:100%;
+        overflow: hidden;
+        
+    }
+
+    .icon-insight{
+        margin-top: 10px;
+        height: 22.5px;
+    }
+
+    .txt-insight{
+        font-weight: normal; font-size: 10pt;
+    }
+
+    .insight-head{
+        font-size: 18pt;
+    }
+
+    .sub-insight{
+        font-size: 14pt;
+    }
+
+    .container{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .heading-dim2{
+        font-size: 14pt;
+    }
+
+    img.icon-20{
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .desc{
+        position: fixed;
+        width: 86%;
+        left: 0.95in;
+    }
+
+    .desc-space{
+        height: 90px;
+    }
+
+    .tbl{
+        font-size: 8pt;
+    }
+
+    .para-block{
+        font-size: 12pt;
+    }
+
+    p.caption{
+        font-size: 10pt;
+        text-align: left;
+    }
+
+    
+  }
+
+  /********************* PRINT END **********************************/
+
+
+
+@page {
+    size: a4;
+    margin:0;
+  }
+  @media print {
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+
+   
+    html, body {
+        width: 100%;
+        height: 95%;
+        
+    }
+    h1.name{
+        word-wrap: break-word;
+        width: 45%;
+    }
+
+
+    .date{
+        text-align: left;
+    }
+
+    
+  }
+
+@media only screen {
+    html,body{
+    width: 210mm;
+    height: 297mm;
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+}

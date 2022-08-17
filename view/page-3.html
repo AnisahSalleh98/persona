@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/template-persona-group.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Persona Group Report | 3</title>
+    <!-- InstanceEndEditable -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <link rel="stylesheet" href="../script/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../fonts/fontawesome.min.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+    <!--Header-->
+     <header class="mb-0">
+                <div class="containerw mb-0">
+                    <div class="header-container mt-4 mb-0">
+                        <div class="row" >
+                            <div class="col-4">
+        
+                                <div class="row">
+                                    <div class="col-6"><img src="../images/logo.png" class="logo" alt=""></div>
+                                    <div class="col-6"><img src="../images/mock-logo.png" class="logo" alt=""></div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-right" align="right" >ORGANISATION:</div>
+                                            <div class="col-6 text-right" align="right" >WWWWWWWWWWW WWWWWWWWWWW WWWWW WWWWWW & WWW WWW</div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-12">
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-right" align="right" >TEST DATE:</div>
+                                            <div class="col-6 text-right" align="right" >12 NOVEMBER 2021</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        
+                        <hr class="line-bl mt-3">
+                    </div>
+                </div>
+</header>
+    <!--Header End-->
+	
+	<!--Content-->
+	<!-- InstanceBeginEditable name="ContentRegion" -->
+	<div class="containerw">
+        <h1 class="heading-1 text-uppercase mb-0"><strong>GROUP PROFILE</strong> OVERVIEW</h1>
+        <div class="row mb-0 ">
+            <div class="col-2 pr-0"><hr class="line-bl2 mb-0"></div>
+        </div>
+    </div>
+
+    <div class="dimension-bg mt-4">
+        <div class="containerw">
+            <p class="para">Figure 1 below shows the average scores for each Persona scales.</p>
+            <div class="d-bg">
+                <div class="highcharts-figure mx-auto" >
+                    <div id="chart-bar" style="height:320px; width: 100%;"></div>
+                </div>
+            </div>
+            <p class="para">Figure 2 below shows the distribution for each scale. Within the graph, the factors are ranked from most to fewest lowscoring
+                team members.</p>
+                <div class="d-bg">
+                    <figure class="highcharts-figure-stack" style="background-color: transparent;">
+                        <div id="container-stack"  style="background-color: transparent; height:400px; width: 100%;"></div>
+                    </figure>
+                </div>
+        </div>
+    </div>
+	<!-- InstanceEndEditable -->
+
+    <!--Footer-->
+    <footer>
+        <div class="containerw">
+            <div class="footer" >
+                <div class="containerw">
+                    <div class="row">
+                        <div class="col-7 footer-logo-style">
+                            <span class="footer-text t-footer-copyrights">&copy;2017-2020 Global Psytech Sdn. Bhd. All Rights Reserved.</span>
+                        </div>
+                        <div class="col-5 footer-logo-style text-right" style="text-align: right;"><!-- InstanceBeginEditable name="pageNumber" --><span class="footer-text">3</span><!-- InstanceEndEditable --></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--Footer end-->
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<!-- InstanceBeginEditable name="ScriptRegion" -->
+<script>
+
+
+//RO-BAR
+Highcharts.chart('chart-bar', {
+    chart: {
+        type: 'bar',
+        backgroundColor: "rgba(0,0,0,0)",
+    },
+    title: {
+        text: null
+    },
+    xAxis: {
+        categories: ['Excitement','Conceptual Thinking','Flexibiity','Power','Compassion','Rule-Consciouness','Warmth','Self-Reliance',
+                    'Reasoning','Ambirtion','Self-Awareness','Competitiveness','Economic','Composure','Positivity'],
+        title: {
+        text: null
+        },
+        style:{
+            fontSize:'8pt'
+        }
+    },
+    yAxis: {
+        tickInterval: 20,
+        min: 0,
+        max: 100,
+        title: {
+        text: null
+        },
+        labels: {
+        overflow: 'justify'
+        },
+        
+    },
+    tooltip: {
+        valueSuffix: ' score'
+    },
+    plotOptions: {
+        bar: {
+        dataLabels: {
+            enabled: true
+        }
+        },
+    },
+    legend: {
+        enabled: false
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name:'',
+        colorByPoint: true,
+        data: 
+        [
+        {y: 96,
+        color:'#1c363d'},
+        {y: 88,
+        color:'#417b8d'},
+        {y: 76,
+        color:'#70a9a2'},
+        {y: 65,
+        color:'#9ec1a3'},
+        {y: 63,
+        color:'#d0e2c4'},
+
+        {y: 62,
+        color:'#fff278'},
+        {y: 59,
+        color:'#f9c02c'},
+        {y: 56,
+        color:'#9b51a0'},
+        {y: 53,
+        color:'#543d98'},
+        {y: 51,
+        color:'#95c8ec'},
+
+        {y: 48,
+        color:'#3d83c4'},
+        {y: 38,
+        color:'#15499e'},
+        {y: 36,
+        color:'#009689'},
+        {y: 32,
+        color:'#00695d'},
+        {y: 21,
+        color:'#004d41'},
+        ],
+    }],
+    exporting:{
+        enabled:false
+    }
+    });
+
+    Highcharts.chart('container-stack', {
+    chart: {
+        type: 'bar',
+        backgroundColor: 'rgba(0,0,0,0)'
+    },
+    title: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Excitement','Conceptual Thinking','Flexibiity','Power','Compassion','Rule-Consciouness','Warmth','Self-Reliance',
+                    'Reasoning','Ambirtion','Slef-Awareness','Competitiveness','Economic','Composure','Positivity'],        
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text:'Total Individuals: 25'
+        },
+        gridLineWidth:0,
+        gridLineColor: ' gray',
+        labels:{enabled:false}
+    },
+    legend: {
+        reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal'
+        },
+        bar:{
+            dataLabels: {
+            enabled: true
+            },
+        }
+    },
+    credits: {
+      enabled: false
+    },
+    exporting:{
+        enabled:false
+    },
+    series: [{
+        name: 'High',
+        data: [4, 5, 1, 2, 1, 4, 5, 1, 2, 1,4, 5, 1, 2, 1],
+        color:'#95c8ec',
+    }, {
+        name: 'Medium',
+        data: [7, 5, 7, 6, 3,7, 5, 7, 6, 3, 7, 5, 7, 6, 3],
+        color:'#cde0c3',
+    }, {
+        name: 'Low',
+        data: [ 14, 15, 17, 17, 21, 14, 15, 17, 17, 21,14, 15, 17, 17, 21],
+        color:'#417b8d',
+    }]
+});
+
+</script><!-- InstanceEndEditable -->
+	
+</body>
+
+
+<!-- InstanceEnd --></html>
